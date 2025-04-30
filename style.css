@@ -1,0 +1,107 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  background-image: url("LINE_ALBUM_金子写真_250430_27.jpg");
+  background-size: cover;       /* 全体に広げる */
+  background-position: center;  /* 中央寄せ */
+  background-repeat: no-repeat; /* 繰り返さない */
+  height: 200px;                /* 背景が見えるように高さ指定 */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  
+}
+
+a {
+  background: rgb(0, 122, 128);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header h1 {
+  background-color: rgba(255, 255, 255, 0.7);  /* 白＋70%不透明（=30%透明） */
+  color: black;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-box {
+  background-color: rgba(255, 255, 255, 0.7);  /* 半透明の白背景 */
+  color: black;                               /* 文字は黒にして読みやすく */
+  display: inline-block;                      /* テキスト部分だけ背景 */
+  padding: 0.5rem 1rem;                       /* 余白をつける */
+  border-radius: 8px;                         /* 少し角を丸く */
+  margin-top: 1rem;
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  background: rgb(0, 122, 128);   /* ボタン色（統一） */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.footer-links a:hover {
+  background: rgb(0, 90, 100);    /* ホバー時の色 */
+}
+
+img {
+  border-radius: 50%;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+main {
+  padding: 2rem;
+}
