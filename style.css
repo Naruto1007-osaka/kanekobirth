@@ -107,3 +107,44 @@ main {
   text-align: center;
   padding: 32px 0;
 }
+
+.container {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.item-1 {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+}
+
+.item-2 {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.item-3 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+}
+
+.item-4 {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+}
+
+.item-5 {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.item-6 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+}
