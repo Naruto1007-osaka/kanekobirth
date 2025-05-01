@@ -6,12 +6,20 @@ body {
   background-color: #ffffff;
 }
 
+header p {
+  margin: 0 0 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 200px;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
 header, footer {
   
   color: white;
   padding: 1rem;
   text-align: center;
-  background-image: url("LINE_ALBUM_金子写真_250430_27.jpg");
+  background-image: url("25.jpg");
   background-size: cover;       /* 全体に広げる */
   background-position: center;  /* 中央寄せ */
   background-repeat: no-repeat; /* 繰り返さない */
@@ -354,12 +362,6 @@ h4 {
 }
 
 /* 以下スライドショーコード */
-.slideshow-section {
-  background-color: #f9f9f9;
-  padding: 2rem 0;
-  overflow: hidden;
-}
-
 .slideshow-container {
   width: 100%;
   overflow: hidden;
@@ -368,7 +370,8 @@ h4 {
 
 .slide-track {
   display: flex;
-  animation: scroll-left 20s linear infinite;
+  width: calc(300px * 78); /* スライド幅 × 画像数×2 */
+  animation: scroll-left 60s linear infinite; /* 時間調整可 */
 }
 
 .slide {
@@ -378,18 +381,23 @@ h4 {
   text-align: center;
 }
 
-.slide img {
-  width: 100%;
-  border-radius: 8px;
-  height: 200px;
-  object-fit: cover;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.slide p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #333;
+.slide img {
+  width: 300px;         /* 横幅（例：200pxに変更） */
+  height: 250px;        /* 高さも必要に応じて指定 */
+  object-fit: cover;    /* はみ出さずに切り取り表示 */
+  border-radius: 12px;  /* ← 次の項目で説明する角丸 */
 }
+
+
 
 /* 目次の見た目を整えるCSS */
 
@@ -462,12 +470,3 @@ h4 {
 }
 
 
-/* アニメーション */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
