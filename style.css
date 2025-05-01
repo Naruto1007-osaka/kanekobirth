@@ -92,7 +92,7 @@ footer a {
 
 
 
-nav ul {
+/* nav ul {
   list-style: none;
   padding: 0;
 }
@@ -100,7 +100,7 @@ nav ul {
 nav li {
   display: inline;
   margin: 0 10px;
-}
+} */
 
 main {
   background: #eee;
@@ -390,6 +390,55 @@ h4 {
   font-size: 0.95rem;
   color: #333;
 }
+
+/* 目次の見た目を整えるCSS */
+
+
+.custom-toc {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 3px double #00a0c0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 160, 192, 0.1);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.custom-toc h2 {
+  text-align: center;
+  color: #00a0c0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-toc ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  text-align: left;               /* 左詰め */
+  font-size: 0.75rem;             /* h2が1.5remなので0.5倍 */
+  margin: 0 auto;
+}
+
+
+.custom-toc li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.custom-toc li a {
+  color: #007acc;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: color 0.3s;
+}
+
+.custom-toc li a:hover {
+  color: #004d80;
+}
+
+
+
 
 @media (max-width: 768px) {
   .container {
